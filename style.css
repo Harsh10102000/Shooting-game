@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.gameview{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    margin: 10px;
+    background-color: lightgoldenrodyellow
+}
+.playersView{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.player1 p, .player2 p{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+.player1 p span, .player2 p span{
+    padding: 5px;
+    background-color: #a5b2bc;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Middle image styling */
+.logo img{
+    width: 300px;    
+    padding-top: 38px;
+    
+}
+.player1, .player2{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    align-items: center;
+}
+.player1 img, .player2 img{
+    width: 90%;
+    height: 300px;
+}
+
+.gameStartButton{
+    display: flex;
+    max-width: 1300px;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    transition: all 0.3s ease ;
+}
+
+/* Start button styles */
+.gameStartButton button{
+    background-color: rgb(170, 133, 140);
+    border: none;
+    padding: 14px;
+    cursor: pointer;
+    border-radius: 14px;
+    color: rgb(47, 38, 38);
+}
+
+
+.playview{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+.playview button{
+    padding: 10px;
+    border: none;
+    background-color: crimson;
+    width: 200px;
+    border-radius: 4px;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 5px;
+    transition: all 0.2s ease;
+}
+
+.playersscore{
+    display: flex;
+    align-items: center;
+}
+.playersscore h5{
+    background-color: #a5b2bc;
+    padding: 10px;
+    margin: 10px;
+    font-size: 20px;
+    border-radius: 50%;
+    display: flex;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+}
+.playbtn{
+    height: 60px;
+}
+#playBtn{
+    display: none;
+}
+
+#whoWon{
+    display: flex;
+    background-color: rgb(182, 179, 179);
+    justify-content: center;
+    align-items: center;
+    color: White;
+    font-size: 40px;
+    width: 500px;
+    height: 350px;
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    display: none;
+    transition: all 0.5s ease-in;
+    border-radius: 5px;
+    padding-left: 30px;
+}

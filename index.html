@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Shooting Game</title>
+</head>
+<body>
+     <!-- View Of The Game -->
+     <div id="gameview" class="gameview">
+
+        <!-- Players View  -->
+        <div class="playersView">
+  
+          <!-- Player-1  -->
+          <div class="player1">
+            <h1>Player 1</h1>
+            <img
+              src="https://f0.pngfuel.com/png/192/295/silhouette-of-man-holding-rifle-counter-strike-global-offensive-counter-strike-source-logo-counter-strike-logo-png-clip-art.png"
+              alt=""
+            />
+            <p><span id="OneScore" ></span>1st Player👦</p>
+          </div>
+          <!-- Middle Logo -->
+          <div class="logo">
+            <img
+              src="https://w7.pngwing.com/pngs/816/649/png-transparent-man-with-gun-illustration-family-symbol-irish-mob-logo-russian-mafia-birdcage-people-monochrome-sticker.png"
+              alt=""
+            />
+          </div>
+  
+          <!-- Player-2 -->
+          <div class="player2">
+            <h1>Player 2</h1>
+            <img
+              src="https://w7.pngwing.com/pngs/697/93/png-transparent-soldier-silhouette-soldiers-photography-people-infantry.png"
+              alt=""
+            />
+            <p><span id="TwoScore"></span>2nd Player👦</p>
+          </div>
+        </div>
+  
+        <!-- button to shoot from both sides -->
+        
+        <div class="playview">
+          <button id="btn" onclick="shoot()">Shoot</button>
+          <div class="playbtn">
+            <button id="playBtn" onclick="playAgain()">Play Again</button>
+          </div>
+  
+  
+          <!-- health of player-1 to display -->
+          <div class="playersscore">
+            <h1>Player 1 - Won</h1>
+            <h5 id="player1">0</h5>
+          </div>
+          <!-- health of player-2 to display -->
+          <div class="playersscore">
+            <h1>Player 2 - Won</h1>
+            <h5 id="player2">0</h5>
+          </div>
+        </div>
+      </div>
+  
+      <!-- button to start the game -->
+      <div id="gameStartButton" class="gameStartButton">
+        <button id="gameBtn" onclick="startGame()">Start Game</button>
+      </div>
+  
+      <!-- Modal to display if Any of the player won the match -->
+      <div id="whoWon"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
